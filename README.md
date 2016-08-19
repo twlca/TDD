@@ -44,3 +44,20 @@ _describe_
   測試程式的最開頭建立一組測試套件。把測試套件當作是用於多個單元測試的一個容器，針對 controller, service 等等寫一個 describe 巢狀包含多個 describe。
 _beforeEach_
   beforeEach 類似 xUnit 測試範式的設置函式 (setup function)。也就是說，傳遞給 beforeEach 的函式所含內容會在每個個別的 it 區塊之前被執行。
+_afterEach_
+  afterEach 區塊在各自的 it 區塊運作完成之後執行，如果使用模擬的 (mocking) 函式庫，這個位置是檢查模擬 (mocks) 上面的任何預期內容是否滿足的最佳之處。
+_it_
+  這些是單元測試。每個 it 區塊應該是各自獨立而與其他 it 區塊無關。在 it 裡面，會基本的設置狀態、執行函式、檢查傳回值(return value) 以及確保所有的預期內容都得到滿足。
+_expect_
+  這些與 Jasmine 的 assert 陳述句對等。每個 expect 帶入一個值，接著可以使用其中一個內建（或自訂的）matches 來檢查這個被帶入的值。
+  
+### 有用的 matchers ###
+##### toEqual #####
+##### toBe #####
+##### toBeTruthy #####
+##### toBeFalsy #####
+##### toBeDefined #####
+##### toBeUndefined #####
+##### toBeNull #####
+##### toContain #####
+##### toMatch #####
