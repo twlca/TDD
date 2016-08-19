@@ -53,6 +53,7 @@ _expect_
   
 ### 有用的 matchers ###
 ##### toEqual #####
+這是最基本的 matcher，toEqual 會帶入兩個值，以做兩個物件庂間的相等比較。以物件的案例來說，所有欄位必需匹配；以陣列旳案例來說，所有的陣列項目必須吻合。
 ##### toBe #####
 ##### toBeTruthy #####
 ##### toBeFalsy #####
